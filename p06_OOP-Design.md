@@ -71,13 +71,14 @@ Cuando desarrolle los siguientes ejercicios, ante la presencia de cualquier bug 
 errores) practique el uso del 
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
-1.- 
+1.- Clase Vector3D
 
-2.- 
+2.- Clase Hexadec
 
-3.- [Robot Name](https://exercism.org/tracks/typescript/exercises/robot-name)
 
-4.- [Robot Simulator](https://exercism.org/tracks/javascript/exercises/robot-simulator)
+3.- Queens1 https://jutge.org/problems/P16415_en
+
+4.- Exercism Queen Attack https://exercism.org/tracks/typescript/exercises/queen-attack
 
 ## Referencias
 * [Introduction to TypeScript](https://github.com/alu0101329888/Introduction-to-TypeScript)
