@@ -71,7 +71,7 @@ Cuando desarrolle los siguientes ejercicios, ante la presencia de cualquier bug 
 errores) practique el uso del 
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
-1.- Clase Vector3D
+1.- Clase `Vector3D`
 
 [Esta referencia](https://www.nagwa.com/en/explainers/653193529121/)
 puede servirle para recordar las diferentes operaciones que se pueden realizar con vectores 3D.
@@ -96,37 +96,37 @@ export function main(): void {
   const PLAYER_X: string = 'X';
   const PLAYER_O: string = 'O';
   const EMPRY_SQUARE: string = ' ';
-	let player:string = PLAYER_X;
-	let ticTacToe = new TicTacToe();
-	while (!(ticTacToe.isWinner(PLAYER_X) || ticTacToe.isWinner(PLAYER_O) || ticTacToe.isFull())) {
-		ticTacToe.displayBoard();
-		console.log(player + ', choose your location (row, column): ');
-	  let row: number;
-		row = readInt();
+  let player:string = PLAYER_X;
+  let ticTacToe = new TicTacToe();
+  while (!(ticTacToe.isWinner(PLAYER_X) || ticTacToe.isWinner(PLAYER_O) || ticTacToe.isFull())) {
+    ticTacToe.displayBoard();
+    console.log(player + ', choose your location (row, column): ');
+    let row: number;
+    row = readInt();
     let column: number:
-		column = readInt();
-		while (ticTacToe.isValid(row, column) == false || ticTacToe.playerAt(row, column) != EMPTY_SQUARE) {
-			if (!ticTacToe.isValid(row, column))
-				console.logln('That is not a valid location. Try again.');
-			else if (ticTacToe.playerAt(row, column) != EMPTY_SQUARE)
-				console.log('That location is already full. Try again.');
-			console.log('Choose your location (row, column): ');
-			row = readInt();
-			column = readInt();
-		}
-		ticTacToe.playMove(player, row, column);
-		if (player == PLAYER_X)
-			player = PLAYER_O;
-		else
-			player = PLAYER_X;
-	}
-	ticTacToe.displayBoard();
-	if (ticTacToe.isWinner(PLAYER_X))
-		console.logln('X is the winner!');
-	if (ticTacToe.isWinner(PLAYER_O))
-		console.logln('O is the winner!');
-	if (ticTacToe.isCat())
-		console.logln('The game is a tie.');
+    column = readInt();
+    while (ticTacToe.isValid(row, column) == false || ticTacToe.playerAt(row, column) != EMPTY_SQUARE) {
+      if (!ticTacToe.isValid(row, column))
+        console.logln('That is not a valid location. Try again.');
+      else if (ticTacToe.playerAt(row, column) != EMPTY_SQUARE)
+        console.log('That location is already full. Try again.');
+      console.log('Choose your location (row, column): ');
+      row = readInt();
+      column = readInt();
+    }
+    ticTacToe.playMove(player, row, column);
+    if (player == PLAYER_X)
+      player = PLAYER_O;
+    else
+      player = PLAYER_X;
+  }
+  ticTacToe.displayBoard();
+  if (ticTacToe.isWinner(PLAYER_X))
+    console.logln('X is the winner!');
+  if (ticTacToe.isWinner(PLAYER_O))
+    console.logln('O is the winner!');
+  if (ticTacToe.isCat())
+    console.logln('The game is a tie.');
 }
 
 main();
