@@ -71,9 +71,9 @@ Cuando desarrolle los siguientes ejercicios, ante la presencia de cualquier bug 
 errores) practique el uso del 
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
-### 1.- 
+1.- 
 
-### 2.- 
+2.- 
 
 3.- [Robot Name](https://exercism.org/tracks/typescript/exercises/robot-name)
 
