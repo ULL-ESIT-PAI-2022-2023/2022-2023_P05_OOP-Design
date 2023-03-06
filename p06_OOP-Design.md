@@ -138,11 +138,8 @@ El número de soluciones para diferentes valores de N puede consultarse en
 ## Referencias
 * [3 en raya](https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea#:~:text=Tres%20en%20l%C3%ADnea%3A%20Es%20una,moverse%20una%20intersecci%C3%B3n%20por%20turno.)
 * [Problema de las 8 reinas](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
-* [Introduction to TypeScript](https://github.com/alu0101329888/Introduction-to-TypeScript)
 * [TypeScript Tutorial](https://www.typescripttutorial.net/)
-* [TSConfig Reference](https://www.typescriptlang.org/tsconfig)
 * [TypeDoc](https://typedoc.org/)
-* [TypeDoc Tutorial](https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/docco/src/index.html#:~:text=TypeDoc%20is%20an%20API%20documentation,HTML%20documentation%20website%20for%20you.)
 * [TypeScript track in Exercism](https://exercism.org/tracks/typescript)
 * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
