@@ -72,16 +72,20 @@ errores) practique el uso del
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
 1.- Clase Vector3D
+
 [Esta referencia](https://www.nagwa.com/en/explainers/653193529121/)
 puede servirle para recordar las diferentes operaciones que se pueden realizar con vectores 3D.
 
 Desarrolle un módulo que exporte una clase `Vector3D` para representar vectores en un espacio tridimensional.
+
 Desarrolle tests unitarios en Jest para probar la corrección de los diferentes métodos que desarrolle.
+
 Desarrolle un programa cliente que instancie objetos de la clase y realice con ellos diferentes operaciones.
 
-2.- Clase TicTacToe` que permita modelar el juego del 
+2.- Clase `TicTacToe` que permita modelar el juego del 
 [3 en raya](https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea#:~:text=Tres%20en%20l%C3%ADnea%3A%20Es%20una,moverse%20una%20intersecci%C3%B3n%20por%20turno.)
 (*Tic-tac-toe* en inglés).
+
 El siguiente pseudocódigo correspondería al bucle de juego de un programa principal que utiliza la clase
 `TicTacToe`, y de él pueden deducirse algunos de los métodos que resultará conveniente implementar.
 
