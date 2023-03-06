@@ -73,10 +73,20 @@ errores) practique el uso del
 
 1.- Clase Vector3D
 
-2.- Clase Hexadec
+2.- Clase Hexadecimal https://www.codewars.com/kata/5483366098aa442def0009af
+- Suma
+- Resta
+- Producto
+- División
+- toString
+- toInteger
+- toBinary
+- Compare
+
 
 
 3.- Queens1 https://jutge.org/problems/P16415_en
+            https://jutge.org/problems/P17921_en
 
 4.- Exercism Queen Attack https://exercism.org/tracks/typescript/exercises/queen-attack
 
