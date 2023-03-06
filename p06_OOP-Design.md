@@ -83,7 +83,8 @@ errores) practique el uso del
 - toBinary
 - Compare
 
-
+3.- Tic-tac-toe class https://programmingbydoing.com/a/tic-tac-toe-oop.html
+                      https://jutge.org/problems/P54928_en
 
 3.- Queens1 https://jutge.org/problems/P16415_en
             https://jutge.org/problems/P17921_en
