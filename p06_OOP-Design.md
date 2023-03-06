@@ -71,18 +71,7 @@ Cuando desarrolle los siguientes ejercicios, ante la presencia de cualquier bug 
 errores) practique el uso del 
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
-1.- Clase `Vector3D`
-
-[Esta referencia](https://www.nagwa.com/en/explainers/653193529121/)
-puede servirle para recordar las diferentes operaciones que se pueden realizar con vectores 3D.
-
-Desarrolle un módulo que exporte una clase `Vector3D` para representar vectores en un espacio tridimensional.
-
-Desarrolle tests unitarios en Jest para probar la corrección de los diferentes métodos que desarrolle.
-
-Desarrolle un programa cliente que instancie objetos de la clase y realice con ellos diferentes operaciones.
-
-2.- Clase `TicTacToe` que permita modelar el juego del 
+1.- Clase `TicTacToe` que permita modelar el juego del 
 [3 en raya](https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea#:~:text=Tres%20en%20l%C3%ADnea%3A%20Es%20una,moverse%20una%20intersecci%C3%B3n%20por%20turno.)
 (*Tic-tac-toe* en inglés).
 
@@ -95,7 +84,7 @@ sea accesible a través de un servidor web en su máquina virtual de la asignatu
 export function main(): void { 
   const PLAYER_X: string = 'X';
   const PLAYER_O: string = 'O';
-  const EMPRY_SQUARE: string = ' ';
+  const EMPRY_SQUARE: string = '.';
   let player:string = PLAYER_X;
   let ticTacToe = new TicTacToe();
   while (!(ticTacToe.isWinner(PLAYER_X) || ticTacToe.isWinner(PLAYER_O) || ticTacToe.isFull())) {
@@ -132,12 +121,23 @@ export function main(): void {
 main();
 ```
 
-3.- Queens1 https://jutge.org/problems/P16415_en
-            https://jutge.org/problems/P17921_en
+2.- El
+[Problema de las 8 reinas](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
+es un pasatiempo famoso consistente en colocar ocho reinas en un tablero de ajedrez de modo que no se amenacen.
 
-4.- Exercism Queen Attack https://exercism.org/tracks/typescript/exercises/queen-attack
+Desarrolle una clase `ChessBoard` que le permita modelar un tablero de ajedrez.
+
+Utilice la clase `ChessBoard` para obtener una solución orientada a objetos del programa 
+[Queens](https://jutge.org/problems/P16415_en) de Jutge.
+
+Para este problema, desarrolle tests que comprueben el correcto funcionamiento de su programa para diferentes
+valores de N.
+El número de soluciones para diferentes valores de N puede consultarse en 
+[esta referencia](http://www.durangobill.com/N_Queens.html)
 
 ## Referencias
+* [3 en raya](https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea#:~:text=Tres%20en%20l%C3%ADnea%3A%20Es%20una,moverse%20una%20intersecci%C3%B3n%20por%20turno.)
+* [Problema de las 8 reinas](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
 * [Introduction to TypeScript](https://github.com/alu0101329888/Introduction-to-TypeScript)
 * [TypeScript Tutorial](https://www.typescripttutorial.net/)
 * [TSConfig Reference](https://www.typescriptlang.org/tsconfig)
