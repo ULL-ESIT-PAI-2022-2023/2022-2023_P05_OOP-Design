@@ -72,19 +72,61 @@ errores) practique el uso del
 [depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
 1.- Clase Vector3D
+[Esta referencia](https://www.nagwa.com/en/explainers/653193529121/)
+puede servirle para recordar las diferentes operaciones que se pueden realizar con vectores 3D.
 
-2.- Clase Hexadecimal https://www.codewars.com/kata/5483366098aa442def0009af
-- Suma
-- Resta
-- Producto
-- División
-- toString
-- toInteger
-- toBinary
-- Compare
+Desarrolle un módulo que exporte una clase `Vector3D` para representar vectores en un espacio tridimensional.
+Desarrolle tests unitarios en Jest para probar la corrección de los diferentes métodos que desarrolle.
+Desarrolle un programa cliente que instancie objetos de la clase y realice con ellos diferentes operaciones.
 
-3.- Tic-tac-toe class https://programmingbydoing.com/a/tic-tac-toe-oop.html
-                      https://jutge.org/problems/P54928_en
+2.- Clase TicTacToe` que permita modelar el juego del 
+[3 en raya](https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea#:~:text=Tres%20en%20l%C3%ADnea%3A%20Es%20una,moverse%20una%20intersecci%C3%B3n%20por%20turno.)
+(*Tic-tac-toe* en inglés).
+El siguiente pseudocódigo correspondería al bucle de juego de un programa principal que utiliza la clase
+`TicTacToe`, y de él pueden deducirse algunos de los métodos que resultará conveniente implementar.
+
+Para este ejercicio, genere con TypeDoc la documentación del programa en formato HTML y haga que dicha documentación 
+sea accesible a través de un servidor web en su máquina virtual de la asignatura.
+``` ts
+export function main(): void { 
+  const PLAYER_X: string = 'X';
+  const PLAYER_O: string = 'O';
+  const EMPRY_SQUARE: string = ' ';
+	let player:string = PLAYER_X;
+	let ticTacToe = new TicTacToe();
+	while (!(ticTacToe.isWinner(PLAYER_X) || ticTacToe.isWinner(PLAYER_O) || ticTacToe.isFull())) {
+		ticTacToe.displayBoard();
+		console.log(player + ', choose your location (row, column): ');
+	  let row: number;
+		row = readInt();
+    let column: number:
+		column = readInt();
+		while (ticTacToe.isValid(row, column) == false || ticTacToe.playerAt(row, column) != EMPTY_SQUARE) {
+			if (!ticTacToe.isValid(row, column))
+				console.logln('That is not a valid location. Try again.');
+			else if (ticTacToe.playerAt(row, column) != EMPTY_SQUARE)
+				console.log('That location is already full. Try again.');
+			console.log('Choose your location (row, column): ');
+			row = readInt();
+			column = readInt();
+		}
+		ticTacToe.playMove(player, row, column);
+		if (player == PLAYER_X)
+			player = PLAYER_O;
+		else
+			player = PLAYER_X;
+	}
+	ticTacToe.displayBoard();
+	if (ticTacToe.isWinner(PLAYER_X))
+		console.logln('X is the winner!');
+	if (ticTacToe.isWinner(PLAYER_O))
+		console.logln('O is the winner!');
+	if (ticTacToe.isCat())
+		console.logln('The game is a tie.');
+}
+
+main();
+```
 
 3.- Queens1 https://jutge.org/problems/P16415_en
             https://jutge.org/problems/P17921_en
