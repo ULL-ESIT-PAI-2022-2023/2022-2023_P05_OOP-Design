@@ -13,7 +13,6 @@
     "noImplicitReturns": true,                /* Report error when not all code paths in function return a value. */
     "forceConsistentCasingInFileNames": true  /* Force all file names to have the same case style. */
   },
-  "files": ["getters-setters.ts"],
   "exclude": [
         "node_modules",
         "build",
